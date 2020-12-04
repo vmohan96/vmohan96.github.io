@@ -26,10 +26,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="assets/img/Resume Main.pdf" target="_blank">Resume</a></li>
@@ -49,79 +49,22 @@
                         Address · St. Louis, MO 63304 · (314) 807-2113 ·
                         <a href="mailto:vmohan96@gmail.com">vmohan96@gmail.com</a>
                     </div>
-                    <p class="lead mb-5">I am a data scientist with experience programming in Python as well as with a number of machine learning and data analytics skills. I also have experience with deep learning methods including neural networks for image and language analysis, natural language processing with word embedding, time series analysis, and computer vision.
-                    <br>
-                    <br>My prior experience included data analysis in the context of cognitive psychology research methods and later in marketing analytics, and my passion for solving complex problems motivated me to go deeper and gain advanced experience in programming and machine learning.
+                    <p class="lead mb-5">I am a data scientist, with experience programming in Python as well as with a number of machine learning and data analytics skills. These include statistical analysis and visualization, regression and classification, as well as more advanced deep learning methods including neural networks (feed-forward, convolutional, and recurrent using Keras) for both image and language analysis, natural language processing with word embedding, time series analysis, computer vision, and more.
                     </p>
                     <div class="social-icons">
-                        <a class="social-icon" link href="https://www.linkedin.com/in/varunmohan96/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" link href="https://github.com/vmohan96" target="_blank"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" link href="https://medium.com/@vmohan96" target="_blank"><i class="fab fa-medium"></i></a>
+                        <a class="social-icon" href="https://www.linkedin.com/in/varunmohan96/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/vmohan96" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </section>
             <hr class="m-0" />
-
-            <!-- Projects-->
-            <section class="resume-section" id="projects">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Data Science Projects</h2>
-
-                    <!-- Capstone Project -->
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Language-Based Depression Detection</h3>
-                            <br>
-                            <!-- <div class="subheading mb-3">General Assembly</div> -->
-                            <p>Depression is the most common mood disorder, affecting hundreds of millions worldwide. It can be particularly debilitating in severe cases. For the final capstone project of my Data Science Immersive Program, I created an early detection system, capable of detecting the likelihood of depression indicated from text data.
-                            <br>
-                            <br>This system implemented two neural network models. The first was built on vectorized representations of the training data using Bidirectional Encoder Representations from Transformers (bERT) word embeddings, with a Bi-LSTM neural network architecture. The second model was trained on sentiment scores computed for each data point in the text corpus, with a feed-forward network architecture. The models were folded together based on their predicted probabilities of depression, resulting in a more robust combined model, that had 87% accuracy with the validation set.
-                            <br>
-                            <br>This was also converted into a web application which can take user input and output the predicted probability of the text being indicative of depression based on the model. The application also includes a 7-day mood-tracker based on the same journal-style inputs for each day. The full project can be accessed by <a href="https://github.com/vmohan96/Language-Based-Depression-Detection" target="_blank">clicking here</a>, and the web application can be accessed by <a href="https://share.streamlit.io/vmohan96/depression-detection-text-app/main.py" target="_blank">clicking here</a>.
-                            </p>
-                        </div>
-                        <!-- <div class="flex-shrink-0"><span class="text-primary">August 2020 - November 2020</span></div> -->
-                    </div>
-
-                    <!-- COVID-19 Project -->
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Decoding COVID-19</h3>
-                            <br>
-                            <p>The COVID-19 pandemic has been the world’s most pressing health crisis since the end of 2019. And with so much data being reported and collected every single, it was a subject both extremely relevant and rich for analysis. With this in mind, my team and I set out to conduct a series of analyses of the virus’s progression in the United States, the country which arguably has been hit the hardest.
-                            <br>
-                            <br>Among our analyses included a least squares regression which correlated case and death rate data with data from a mask sentiment survey collected by state, to observe the relationship between opinions on wearing masks and the rate of case growth as well as rate of deaths per state. We also analyzed the relationship between political party and case growth, as there is an observable divide in sentiment between parties. 
-                            <br>
-                            <br>To grant users the ability to quickly visualize COVID metrics for each US state over the entire progression period of the virus, we created a series of web applications with customizable displays. These allowed the users to visualize relative and cumulative case growth per state, view it in choropleth format, as well as compare progression for multiple states. This project can be accessed by <a href="https://github.com/vmohan96/Decoding-COVID-19" target="_blank">clicking here</a>.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <!-- Reddit Project -->
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Classifying Reddit Posts with Natural Language Processing</h3>
-                            <br>
-                            <p>Reddit is a massive online community-based platform, containing subreddits on an incredibly diverse array of subjects. My goal for this project was to take two of these subreddits, and see if I could build a classification model capable of understanding which posts correspond to each.
-                            <br>
-                            <br>I used the PushShift API to scrape a total of 40,000 posts from the r/PersonalFinance and r/Investing communities. After data cleaning, I created multiple classifiers using either CountVectorization or TFIDFVectorization for preprocessing, and several classification models including Logistic Regression, KNN, Random Forest, and Naive Bayes. Logistic Regression with CountVectorization was the most effective with a validation accuracy of 86%. This project can be accessed by <a href="https://github.com/vmohan96/Reddit-Classification-With-NLP" target="_blank">clicking here</a>.
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-                </section>
-                <hr class="m-0" />
-
             <!-- Experience-->
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Experience</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Data Science Immersive</h3>
+                            <h3 class="mb-0">Data Science Student</h3>
                             <div class="subheading mb-3">General Assembly</div>
                             <p>In a 13-week, 480-hour immersive course, gained proficiency with programming in Python and used state-of-the-art data science techniques to solve real-world problems. Developed skills in data cleaning, visualization, statistical analysis, as well as advanced machine learning/deep learning techniques including neural networks, time series analysis, natural language processing, and computer vision.</p>
                         </div>
@@ -154,7 +97,6 @@
                 </div>
             </section>
             <hr class="m-0" />
-
             <!-- Education-->
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
@@ -180,8 +122,6 @@
                 </div>
             </section>
             <hr class="m-0" />
-
-
             <!-- Skills-->
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
@@ -237,6 +177,29 @@
                 </div>
             </section>
             <hr class="m-0" />
+
+            <!-- Projects-->
+            <section class="resume-section" id="projects">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Data Science Projects</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Language-Based Depression Detection</h3>
+                            <!-- <div class="subheading mb-3">General Assembly</div> -->
+                            <p>Using bERT word embedding vectorization and a bidirectional LSTM neural network, created a model and a companion Streamlit application capable of detecting the likelihood of depression based on text data.</p>
+                        </div>
+                        <!-- <div class="flex-shrink-0"><span class="text-primary">August 2020 - November 2020</span></div> -->
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">COVID-19 Analysis Project</h3>
+                            <!-- <div class="subheading mb-3">General Assembly</div> -->
+                            <p>Conducted comprehensive analysis of COVID-19's progression in the United States, correlating case and death rates with several factors including mask sentiment and political party. Created a web application allowing the user to track cases and deaths in any state of their choice, as well as observe correlations with superspreader events.</p>
+                        </div>
+                        <!-- <div class="flex-shrink-0"><span class="text-primary">August 2020 - November 2020</span></div> -->
+                    </div>
+
+
 
             <!-- Interests-->
             <section class="resume-section" id="interests">
